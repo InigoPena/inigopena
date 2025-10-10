@@ -695,10 +695,14 @@ footer {
   .section-image img {
     flex: 1;
     width: calc(50% - 5px);
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-overlay {
+    display: none;
   }
   
   .curriculum-section h2 {
