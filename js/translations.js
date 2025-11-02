@@ -45,7 +45,7 @@ const translations = {
         "curriculum.experience.technologies": "<b>Tecnologías:</b> Python · LangChain · LangGraph · LLMs (OpenAI) · FastMCP · Base de datos vectorial · Memoria conversacional",
         
         // Footer
-        "footer.description": "Desarrollador en <em>IA, Machine Learning y Finanzas</em>",
+        "footer.description": "Analista y Desarrollador en <em>IA y Machine Learning</em>",
         
         // Common
         "alt.profile": "Foto de Iñigo Peña"
@@ -95,7 +95,7 @@ const translations = {
         "curriculum.experience.technologies": "<b>Technologies:</b> Python · LangChain · LangGraph · LLMs (OpenAI) · FastMCP · Vector database · Conversational memory",
         
         // Footer
-        "footer.description": "Developer in <em>AI, Machine Learning and Finance</em>",
+        "footer.description": "Analista y Desarrollador en <em>IA y Machine Learning</em>",
         
         // Common
         "alt.profile": "Photo of Iñigo Peña"
