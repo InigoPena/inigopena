@@ -44,6 +44,12 @@ const translations = {
         "curriculum.experience.description2": "Allí me involucré en el desarrollo desde cero de un <b>agente RAG</b> integrado con el <b>protocolo MCP</b>, capaz de combinar recuperación de información y generación automática. Este proyecto me permitió profundizar en arquitecturas modernas de agentes de IA y en la conexión con herramientas externas.",
         "curriculum.experience.technologies": "<b>Tecnologías:</b> Python · LangChain · LangGraph · LLMs (OpenAI) · FastMCP · Base de datos vectorial · Memoria conversacional",
         
+        // Experiencia Inetum
+        "curriculum.experience.inetum.company": "Inetum",
+        "curriculum.experience.inetum.position": "Data Science Intern",
+        "curriculum.experience.inetum.description": "En diciembre de 2025 empecé mis prácticas en la empresa <strong>Inetum</strong>, donde estoy tenido la oportunidad de colaborar en proyectos reales, adquiriendo experiencia práctica en el desarrollo de soluciones tecnológicas y IA. Esta oportunidad me permite contribuir en proyectos tecnológicos y basados en datos dentro de un entorno empresarial, trabajando con datos estructurados, procesos de negocio y sistemas orientados a producción.",
+        "curriculum.experience.inetum.technologies": "<b>Tecnologías:</b> Python · (SkLearn) · (TensorFlow) · (Pandas) · Power BI",
+        
         // Footer
         "footer.description": "Analista y Desarrollador en <em>IA y Machine Learning</em>",
         
@@ -93,6 +99,12 @@ const translations = {
         "curriculum.experience.description1": "During the summer I completed a <em><strong>two-month internship</strong></em> at <strong>LKS Next</strong> company, in the <strong>GobTech</strong> department. During this time I was able to collaborate on real projects, gaining practical experience in developing technological solutions. This opportunity allowed me to apply my knowledge and continue growing in a professional environment.",
         "curriculum.experience.description2": "There I was involved in developing from scratch a <b>RAG agent</b> integrated with the <b>MCP protocol</b>, capable of combining information retrieval and automatic generation. This project allowed me to delve deeper into modern AI agent architectures and connection with external tools.",
         "curriculum.experience.technologies": "<b>Technologies:</b> Python · LangChain · LangGraph · LLMs (OpenAI) · FastMCP · Vector database · Conversational memory",
+        
+        // Experiencia Inetum
+        "curriculum.experience.inetum.company": "Inetum",
+        "curriculum.experience.inetum.position": "Data Science Intern",
+        "curriculum.experience.inetum.description": "In December 2025 I started my internship at <strong>Inetum</strong>, where I am having the opportunity to collaborate on real projects, gaining practical experience in developing technological solutions and AI. This opportunity allows me to contribute to technological and data-based projects within a business environment, working with structured data, business processes and production-oriented systems.",
+        "curriculum.experience.inetum.technologies": "<b>Technologies:</b> Python · (SkLearn) · (TensorFlow) · (Pandas) · Power BI",
         
         // Footer
         "footer.description": "Analista y Desarrollador en <em>IA y Machine Learning</em>",
