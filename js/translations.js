@@ -14,6 +14,7 @@ const translations = {
         "about.description2": "A lo largo de mi trayectoria <em>académica y profesional</em> he trabajado en proyectos que combinan modelos predictivos, series temporales y análisis cuantitativo. Me apasiona traducir datos complejos en soluciones prácticas y eficientes, ya sea desarrollando algoritmos personalizados o construyendo <i>sistemas de análisis automatizados</i>.",
         "about.description3": "<b>Mi objetivo</b> es seguir creciendo como profesional en el ámbito de la <em>inteligencia artificial aplicada</em>, contribuyendo con soluciones eficientes y orientadas al impacto.",
         "about.more": "Mas sobre mí",
+        "about.cv": "Curriculum",
         "about.career": "Trayectoria Profesional",
         
         // Página de currículum
@@ -32,6 +33,8 @@ const translations = {
         "curriculum.projects.banking.description": "Predicción de la probabilidad de abandono de clientes en el sector bancario",
         "curriculum.projects.anomaly.title": "🔍 Detección de Anomalías",
         "curriculum.projects.anomaly.description": "Modelos Deep Learning para identificar patrones irregulares series temporales de precios de stock",
+        "curriculum.projects.gold.title": "🪙 Risk Assessment en Inversiones de Oro",
+        "curriculum.projects.gold.description": "Agente de Reinforcement Learning para evaluación de riesgo en inversiones de oro con activo de cobertura",
         "curriculum.projects.all.title": "⚡ Todos mis proyectos",
         "curriculum.projects.all.description": "En mi perfil de github puedes encontrar todos mis proyectos",
         "curriculum.projects.quote": "En esta sección encontrarás algunos de los proyectos que he desarrollado durante mis años en la universidad. Cada uno refleja mi aprendizaje y la aplicación práctica de la Inteligencia Artificial, el Machine Learning y la programación en distintos contextos.",
@@ -48,7 +51,7 @@ const translations = {
         "curriculum.experience.inetum.company": "Inetum",
         "curriculum.experience.inetum.position": "Data Science Intern",
         "curriculum.experience.inetum.description": "En diciembre de 2025 empecé mis prácticas en la empresa <strong>Inetum</strong>, donde estoy tenido la oportunidad de colaborar en proyectos reales, adquiriendo experiencia práctica en el desarrollo de soluciones tecnológicas y IA. Esta oportunidad me permite contribuir en proyectos tecnológicos y basados en datos dentro de un entorno empresarial, trabajando con datos estructurados, procesos de negocio y sistemas orientados a producción.",
-        "curriculum.experience.inetum.technologies": "<b>Tecnologías:</b> Python · (SkLearn) · (TensorFlow) · (Pandas) · Power BI",
+        "curriculum.experience.inetum.technologies": "<b>Tecnologías:</b> Python · (SkLearn) · (TensorFlow) · (Pandas) · SQL · Power BI · Shiny",
         
         // Footer
         "footer.description": "Analista y Desarrollador en <em>IA y Machine Learning</em>",
@@ -70,6 +73,7 @@ const translations = {
         "about.description2": "Throughout my <em>academic and professional</em> career I have worked on projects that combine predictive models, time series and quantitative analysis. I am passionate about translating complex data into practical and efficient solutions, whether developing custom algorithms or building <i>automated analysis systems</i>.",
         "about.description3": "<b>My goal</b> is to continue growing as a professional in the field of <em>applied artificial intelligence</em>, contributing efficient and impact-oriented solutions.",
         "about.more": "More about me",
+        "about.cv": "Resume",
         "about.career": "Professional Career",
         
         // Página de currículum
@@ -88,6 +92,8 @@ const translations = {
         "curriculum.projects.banking.description": "Prediction of customer churn probability in the banking sector",
         "curriculum.projects.anomaly.title": "🔍 Anomaly Detection",
         "curriculum.projects.anomaly.description": "Deep Learning models to identify irregular patterns in stock price time series",
+        "curriculum.projects.gold.title": "🪙 Risk Assessment in Gold Investments",
+        "curriculum.projects.gold.description": "Reinforcement Learning agent for risk assessment in gold investments with hedging asset",
         "curriculum.projects.all.title": "⚡ All my projects",
         "curriculum.projects.all.description": "On my GitHub profile you can find all my projects",
         "curriculum.projects.quote": "In this section you will find some of the projects I have developed during my university years. Each one reflects my learning and practical application of Artificial Intelligence, Machine Learning and programming in different contexts.",
@@ -104,7 +110,7 @@ const translations = {
         "curriculum.experience.inetum.company": "Inetum",
         "curriculum.experience.inetum.position": "Data Science Intern",
         "curriculum.experience.inetum.description": "In December 2025 I started my internship at <strong>Inetum</strong>, where I am having the opportunity to collaborate on real projects, gaining practical experience in developing technological solutions and AI. This opportunity allows me to contribute to technological and data-based projects within a business environment, working with structured data, business processes and production-oriented systems.",
-        "curriculum.experience.inetum.technologies": "<b>Technologies:</b> Python · (SkLearn) · (TensorFlow) · (Pandas) · Power BI",
+        "curriculum.experience.inetum.technologies": "<b>Technologies:</b> Python · (SkLearn) · (TensorFlow) · (Pandas) · SQL · Power BI · Shiny",
         
         // Footer
         "footer.description": "Analista y Desarrollador en <em>IA y Machine Learning</em>",
@@ -157,6 +163,16 @@ function updateLanguageButtons() {
             btn.classList.remove('active');
         }
     });
+}
+
+// Función para abrir el CV en el idioma correcto
+function openCV() {
+    const cvPaths = {
+        es: 'archives/Iñigo_Peña.pdf',
+        en: 'archives/Iñigo_Peña_En.pdf'
+    };
+    const cvPath = cvPaths[currentLanguage] || cvPaths.es;
+    window.open(cvPath, '_blank');
 }
 
 // Inicializar cuando se carga la página

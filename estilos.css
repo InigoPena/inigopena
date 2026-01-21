@@ -168,10 +168,16 @@ main{
   color: #010e3b;
 }
 
+.about-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
 .about-me a{
   font-family: Arial;
   display: inline-flex;
-  margin-top: 20px;
   padding: 15px 30px;
   background-color: #004245;
   color: white; font-size: 24px;
@@ -710,6 +716,19 @@ footer {
     margin-left: 0;
     text-align: center;
   }
+
+  /* Ajustes para la sección de experiencia en móvil */
+  .experience > div {
+    flex-direction: column !important;
+  }
+
+  .experience > div > div {
+    flex-direction: column !important;
+  }
+
+  .experience > div > div > div {
+    flex-direction: column !important;
+  }
 }
 
 
@@ -820,10 +839,12 @@ footer {
   /* Para secciones con una sola imagen (como experiencia) */
   .experience .section-image {
     justify-content: center;
+    flex-direction: column;
   }
   
   .experience .section-image img {
-    width: 80%;
+    width: 100% !important;
     max-width: 250px;
+    margin: 0 auto;
   }
 }
