@@ -522,23 +522,25 @@ footer {
   pointer-events: none;
 }
 
-.project-icon {
-  font-size: 44px;
-  display: block;
-  margin-bottom: 14px;
-  position: relative;
-  z-index: 1;
-}
-
 .project-card-title {
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   margin: 0;
   color: white;
   line-height: 1.3;
   position: relative;
   z-index: 1;
+}
+
+.project-card-title::before {
+  content: '';
+  display: block;
+  width: 38px;
+  height: 3px;
+  background: #e6a119;
+  border-radius: 2px;
+  margin-bottom: 16px;
 }
 
 .project-card-body {
