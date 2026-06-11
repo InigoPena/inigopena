@@ -33,11 +33,15 @@
         </div>
 
         <nav>
-            <a href="#about" data-i18n="nav.about">Sobre mí</a>
-            <a href="curriculum.html#proyectos" data-i18n="nav.projects">Proyectos</a>
-            <a href="curriculum.html#formacion" data-i18n="nav.education">Formación</a>
-            <a href="curriculum.html#experiencia" data-i18n="nav.experience">Experiencia</a>
+            <a href="curriculum.html" data-i18n="nav.about">Sobre mí</a>
+            <a href="#" onclick="openCV(); return false;" data-i18n="about.cv">Curriculum</a>
         </nav>
+
+        <a href="#about" class="scroll-arrow" aria-label="Scroll down">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </a>
     </header>
     <main>
         <div class="about-container" id="about">
