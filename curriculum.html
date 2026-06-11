@@ -64,45 +64,38 @@
         </section>
 
         <section class="curriculum-section projects" id="proyectos">
-            <div class="section-container reverse">
-                <div class="section-image">
-                    <img src="imgs/Anomaly_Detection.png" alt="Detección de Anomalías">
-                    <img src="imgs/Bank_Churn.png" alt="Análisis de Clientes Bancarios">
-                </div>
-                <div>
-                    <div>
-                        <h2 data-i18n="curriculum.projects.title">Proyectos Destacados</h2>
-                    </div>
-                    
-                    <div>
-                        <p class="projects-intro" data-i18n="curriculum.projects.intro">
-                            Selección de proyectos que demuestran mi capacidad para aplicar 
-                            <strong>Inteligencia Artificial</strong> y <strong>Machine Learning</strong>.
-                        </p>
-                        
-                        <div class="project-highlights">
-                            <div class="highlight-item">
-                                <h4><a href="https://github.com/MateoPerezSuarez/Bank-Churn-Project" data-i18n="curriculum.projects.banking.title">📈 Abandono Bancario</a></h4>
-                                <p data-i18n="curriculum.projects.banking.description">Predicción de la probabilidad de abandono de clientes en el sector bancario</p>
-                            </div>
-                            <div class="highlight-item">
-                                <h4><a href="https://github.com/InigoPena/Anomaly_Detection_in_Stock_Prices" data-i18n="curriculum.projects.anomaly.title">🔍 Detección de Anomalías</a></h4>
-                                <p data-i18n="curriculum.projects.anomaly.description">Modelos Deep Learning para identificar patrones irregulares series temporales de precios de stock</p>
-                            </div>
-                            <div class="highlight-item">
-                                <h4><a href="https://github.com/InigoPena/rl-financial-risk-control" data-i18n="curriculum.projects.gold.title">🪙 Risk Assessment en Inversiones de Oro</a></h4>
-                                <p data-i18n="curriculum.projects.gold.description">Agente de Reinforcement Learning para evaluación de riesgo en inversiones de oro con activo de cobertura</p>
-                            </div>
-                            <div class="highlight-item">
-                                <h4><a href="https://github.com/InigoPena" target="_blank" data-i18n="curriculum.projects.all.title">⚡ Todos mis proyectos</a></h4>
-                                <p data-i18n="curriculum.projects.all.description">En mi perfil de github puedes encontrar todos mis proyectos</p>
-                            </div>
+            <div class="projects-wrapper">
+                <h2 data-i18n="curriculum.projects.title">Proyectos Destacados</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-icon">🔍</span>
+                            <h3 class="project-card-title" data-i18n="curriculum.projects.anomaly.title">Detección de Anomalías en Precios de Stock</h3>
                         </div>
-                        
-                        <blockquote class="mission-quote" data-i18n="curriculum.projects.quote">
-                            En esta sección encontrarás algunos de los proyectos que he desarrollado durante mis años en la universidad.
-                            Cada uno refleja mi aprendizaje y la aplicación práctica de la Inteligencia Artificial, el Machine Learning y la programación en distintos contextos.
-                        </blockquote>
+                        <div class="project-card-body">
+                            <p data-i18n="curriculum.projects.anomaly.description">Detección no supervisada de anomalías en series temporales de cinco grandes tecnológicas del S&P 500 (AAPL, GOOGL, MSFT, NVDA, TSLA) con 20 años de histórico. Implementa dos autoencoders en PyTorch —LSTM y Transformer— entrenados sobre ventanas de 30 días: los puntos en el percentil 95 de error de reconstrucción se marcan como anomalías, capturando eventos reales como el crash del COVID-19 en 2020.</p>
+                            <a href="https://github.com/InigoPena/Anomaly_Detection_in_Stock_Prices" target="_blank" class="project-link" data-i18n="curriculum.projects.github">Ver en GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-icon">📰</span>
+                            <h3 class="project-card-title" data-i18n="curriculum.projects.fintracker.title">FinTracker — Análisis de Noticias Financieras</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p data-i18n="curriculum.projects.fintracker.description">Pipeline completo de NLP sobre un corpus propio de 5.160 artículos financieros scrapeados de empresas del S&P 500. Integra clasificación temática con FinBERT fine-tuneado (92,8% accuracy), resumen automático con T5 y LLaMA, y reconocimiento de entidades con NeuroBERT-NER en un pipeline end-to-end reproducible.</p>
+                            <a href="https://github.com/InigoPena" target="_blank" class="project-link" data-i18n="curriculum.projects.github">Ver en GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-icon">🪙</span>
+                            <h3 class="project-card-title" data-i18n="curriculum.projects.gold.title">Risk Assessment en Inversiones de Oro</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p data-i18n="curriculum.projects.gold.description">Agente de Reinforcement Learning que opera en el mercado de futuros del oro (GC=F) usando bonos del Tesoro americano e índice USD como contexto macroeconómico de cobertura. Construido sobre entornos Gymnasium personalizados con 10 indicadores técnicos de riesgo, tendencia y momentum, aprende políticas de trading seguras orientadas al control del riesgo, no solo a maximizar el beneficio bruto.</p>
+                            <a href="https://github.com/InigoPena/rl-financial-risk-control" target="_blank" class="project-link" data-i18n="curriculum.projects.github">Ver en GitHub →</a>
+                        </div>
                     </div>
                 </div>
             </div>
